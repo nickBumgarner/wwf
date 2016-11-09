@@ -4271,33 +4271,46 @@ header {
       header .tickets a img {
         margin-bottom: 10rem; } }
 
-.lights-carnival .callout {
-  display: inline-block;
-  border: solid 5px white;
-  text-align: center; }
-  .lights-carnival .callout h4 {
-    font-family: "Roboto Condensed", "Roboto", Helvetica, Roboto, Arial, sans-serif;
-    font-size: 24px;
-    line-height: 30px; }
-  .lights-carnival .callout p {
-    font-size: 1.375rem;
-    line-height: 1.5625rem;
-    color: black; }
-  .lights-carnival .callout.primary {
-    margin-top: -.7rem;
-    background-color: #89DCDE;
-    z-index: 2; }
-    .lights-carnival .callout.primary p {
-      margin-bottom: 2.5rem; }
-  .lights-carnival .callout.secondary {
-    background-color: #E2D4EE;
-    z-index: 1;
-    margin-left: -8px; }
-    @media screen and (max-width: 39.9375em) {
-      .lights-carnival .callout.secondary {
-        margin-top: -2rem; } }
-    .lights-carnival .callout.secondary p {
-      margin-bottom: 1.75rem; }
+.lights-carnival {
+  margin-bottom: 5rem; }
+  .lights-carnival .callout {
+    display: inline-block;
+    border: solid 5px white;
+    text-align: center;
+    min-height: 260px;
+    padding-bottom: 5rem;
+    background: url("../img/lights.png") bottom 0.75rem center no-repeat #89DCDE;
+    background-size: 125%; }
+    @media screen and (min-width: 40em) {
+      .lights-carnival .callout {
+        max-width: 46%;
+        margin: 2%; } }
+    .lights-carnival .callout.village {
+      background: url("../img/hoho.png") bottom 0.75rem center no-repeat #E2D4EE;
+      background-size: 125%; }
+    .lights-carnival .callout.volunteer {
+      background: url("../img/stars.png") bottom 0.75rem center no-repeat #3adb76;
+      background-size: 125%; }
+    .lights-carnival .callout.donate {
+      background: url("../img/gifts.png") bottom 0.75rem center no-repeat #89DCDE;
+      background-size: 125%; }
+    .lights-carnival .callout h4 {
+      font-family: "Roboto Condensed", "Roboto", Helvetica, Roboto, Arial, sans-serif;
+      font-size: 24px;
+      line-height: 30px; }
+    .lights-carnival .callout p {
+      font-size: 1.375rem;
+      line-height: 1.5625rem;
+      color: black; }
+    .lights-carnival .callout.primary {
+      background-color: #89DCDE; }
+      .lights-carnival .callout.primary p {
+        margin-bottom: 2.5rem; }
+    .lights-carnival .callout.secondary {
+      background-color: #E2D4EE;
+      z-index: 1; }
+      .lights-carnival .callout.secondary p {
+        margin-bottom: 1.75rem; }
 
 .callout-row {
   z-index: 10;
@@ -4310,7 +4323,7 @@ header {
 
 .content {
   background-color: white;
-  padding: 2rem 0;
+  padding: 2rem 0 0;
   position: relative;
   z-index: 20; }
 
@@ -4322,7 +4335,9 @@ header {
 
 #tickets a {
   font-family: "Roboto", Helvetica, Roboto, Arial, sans-serif;
-  color: #EE3B3E; }
+  color: #EE3B3E;
+  display: inline-block;
+  margin: 0 .5rem; }
 
 .about-wonderfest {
   color: white; }
