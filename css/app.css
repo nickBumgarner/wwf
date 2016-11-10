@@ -4162,10 +4162,6 @@ em {
 hr {
   border-color: white; }
 
-.row {
-  z-index: 3;
-  position: relative; }
-
 .festival-of-cheer-presents {
   padding-top: 1.2rem;
   color: white;
@@ -4277,7 +4273,7 @@ header {
     display: inline-block;
     border: solid 5px white;
     text-align: center;
-    min-height: 260px;
+    min-height: 280px;
     padding-bottom: 5rem;
     background: url("../img/lights.png") bottom 0.75rem center no-repeat #89DCDE;
     background-size: 125%; }
@@ -4301,7 +4297,7 @@ header {
     .lights-carnival .callout p {
       font-size: 1.375rem;
       line-height: 1.5625rem;
-      color: black; }
+      color: #EE3B3E; }
     .lights-carnival .callout.primary {
       background-color: #89DCDE; }
       .lights-carnival .callout.primary p {
@@ -4311,6 +4307,8 @@ header {
       z-index: 1; }
       .lights-carnival .callout.secondary p {
         margin-bottom: 1.75rem; }
+    .lights-carnival .callout:hover p {
+      color: #850b0e; }
 
 .callout-row {
   z-index: 10;
@@ -4348,6 +4346,20 @@ header {
 
 .save-the-date {
   margin-top: -6rem; }
+  .save-the-date:before {
+    content: 'SOLD OUT';
+    position: absolute;
+    top: 0%;
+    left: 0;
+    font-weight: bold;
+    text-shadow: 0 2px 2px black;
+    font-size: 4rem;
+    line-height: 20rem;
+    color: white;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.59); }
   .save-the-date p {
     line-height: 1.5rem;
     font-size: 1.375rem; }
