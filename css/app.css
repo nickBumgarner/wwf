@@ -4577,3 +4577,15 @@ footer {
     width: auto;
     margin: 0 auto;
     display: block; }
+
+.shop-page .shops a {
+  display: inline-block; }
+
+.shop-page .shops h2 {
+  margin-top: 4rem;
+  display: inline-block;
+  width: 100%; }
+
+.shop-page .shops img {
+  height: 100px;
+  margin-bottom: 2rem; }
